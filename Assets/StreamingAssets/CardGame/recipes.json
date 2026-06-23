@@ -1,0 +1,89 @@
+{
+  "recipes": [
+    {
+      "name": "Tomato Soup",
+      "tier": "Common",
+      "basePoints": 10,
+      "playCost": 0,
+      "scoringMultiplier": 1.0,
+      "requiresSubRecipe": false,
+      "slots": [
+        { "matchMode": "AnyInTag", "requiredTags": ["Vegetable"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Vegetable"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Liquid"] }
+      ]
+    },
+    {
+      "name": "Vegetable Broth",
+      "tier": "Common",
+      "basePoints": 8,
+      "playCost": 0,
+      "scoringMultiplier": 1.0,
+      "requiresSubRecipe": false,
+      "slots": [
+        { "matchMode": "AnyInTag", "requiredTags": ["Vegetable"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Liquid"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Spice"] }
+      ]
+    },
+    {
+      "name": "Pasta",
+      "tier": "Common",
+      "basePoints": 12,
+      "playCost": 0,
+      "scoringMultiplier": 1.0,
+      "requiresSubRecipe": false,
+      "slots": [
+        { "matchMode": "AnyInTag", "requiredTags": ["Grain"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Grain"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Dairy"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Liquid"] }
+      ]
+    },
+    {
+      "name": "Beef Stew",
+      "tier": "Uncommon",
+      "basePoints": 30,
+      "playCost": 1,
+      "scoringMultiplier": 1.2,
+      "requiresSubRecipe": false,
+      "slots": [
+        { "matchMode": "AnyInTag",         "requiredTags": ["Meat"] },
+        { "matchMode": "AnyInTag",         "requiredTags": ["Vegetable"] },
+        { "matchMode": "AnyInTag",         "requiredTags": ["Vegetable"] },
+        { "matchMode": "AnyInTag",         "requiredTags": ["Liquid"] },
+        { "matchMode": "AnyOfTierOrHigher","requiredTier": "Common" }
+      ]
+    },
+    {
+      "name": "Pasta Bolognese",
+      "tier": "Uncommon",
+      "basePoints": 40,
+      "playCost": 1,
+      "scoringMultiplier": 1.3,
+      "requiresSubRecipe": true,
+      "slots": [
+        { "matchMode": "AnyRecipe" },
+        { "matchMode": "AnyInTag", "requiredTags": ["Meat"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Vegetable"] },
+        { "matchMode": "AnyInTag", "requiredTags": ["Spice"] }
+      ]
+    },
+    {
+      "name": "Chef's Feast",
+      "tier": "Legendary",
+      "basePoints": 100,
+      "playCost": 3,
+      "scoringMultiplier": 2.0,
+      "requiresSubRecipe": true,
+      "slots": [
+        { "matchMode": "AnyRecipe" },
+        { "matchMode": "AnyRecipe" },
+        { "matchMode": "AnyRecipe" },
+        { "matchMode": "AnyOfTierOrHigher", "requiredTier": "Rare" },
+        { "matchMode": "AnyOfTierOrHigher", "requiredTier": "Rare" },
+        { "matchMode": "AnyInTag", "requiredTags": ["Luxury"] }
+      ]
+    }
+  ]
+}

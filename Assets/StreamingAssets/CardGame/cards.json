@@ -1,0 +1,164 @@
+{
+  "cards": [
+    {
+      "name": "Tomato",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 2,
+      "playCost": 0,
+      "tags": ["Vegetable"],
+      "scoreMultiplierContribution": 1.0,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Onion",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 2,
+      "playCost": 0,
+      "tags": ["Vegetable"],
+      "scoreMultiplierContribution": 1.0,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Water",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 1,
+      "playCost": 0,
+      "tags": ["Liquid"],
+      "scoreMultiplierContribution": 1.0,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Broth",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 3,
+      "playCost": 0,
+      "tags": ["Liquid"],
+      "scoreMultiplierContribution": 1.0,
+      "bonusFlatPoints": 1
+    },
+    {
+      "name": "Wheat Flour",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 2,
+      "playCost": 0,
+      "tags": ["Grain"],
+      "scoreMultiplierContribution": 1.0,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Egg",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 2,
+      "playCost": 0,
+      "tags": ["Dairy"],
+      "scoreMultiplierContribution": 1.0,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Salt",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 1,
+      "playCost": 0,
+      "tags": ["Spice"],
+      "scoreMultiplierContribution": 1.05,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Black Pepper",
+      "type": "ingredient",
+      "tier": "Common",
+      "basePoints": 1,
+      "playCost": 0,
+      "tags": ["Spice"],
+      "scoreMultiplierContribution": 1.05,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Beef",
+      "type": "ingredient",
+      "tier": "Uncommon",
+      "basePoints": 6,
+      "playCost": 1,
+      "tags": ["Meat"],
+      "scoreMultiplierContribution": 1.1,
+      "bonusFlatPoints": 2
+    },
+    {
+      "name": "Chicken",
+      "type": "ingredient",
+      "tier": "Uncommon",
+      "basePoints": 5,
+      "playCost": 1,
+      "tags": ["Meat"],
+      "scoreMultiplierContribution": 1.1,
+      "bonusFlatPoints": 1
+    },
+    {
+      "name": "Salmon",
+      "type": "ingredient",
+      "tier": "Uncommon",
+      "basePoints": 7,
+      "playCost": 1,
+      "tags": ["Fish"],
+      "scoreMultiplierContribution": 1.15,
+      "bonusFlatPoints": 2
+    },
+    {
+      "name": "Cream",
+      "type": "ingredient",
+      "tier": "Uncommon",
+      "basePoints": 4,
+      "playCost": 1,
+      "tags": ["Dairy", "Liquid"],
+      "scoreMultiplierContribution": 1.1,
+      "bonusFlatPoints": 0
+    },
+    {
+      "name": "Saffron",
+      "type": "ingredient",
+      "tier": "Rare",
+      "basePoints": 10,
+      "playCost": 2,
+      "tags": ["Spice", "Luxury"],
+      "scoreMultiplierContribution": 1.3,
+      "bonusFlatPoints": 5
+    },
+    {
+      "name": "Lobster",
+      "type": "ingredient",
+      "tier": "Rare",
+      "basePoints": 14,
+      "playCost": 2,
+      "tags": ["Fish", "Luxury"],
+      "scoreMultiplierContribution": 1.25,
+      "bonusFlatPoints": 5
+    },
+    {
+      "name": "Wagyu Beef",
+      "type": "ingredient",
+      "tier": "Rare",
+      "basePoints": 15,
+      "playCost": 2,
+      "tags": ["Meat", "Luxury"],
+      "scoreMultiplierContribution": 1.3,
+      "bonusFlatPoints": 6
+    },
+    {
+      "name": "Truffle",
+      "type": "ingredient",
+      "tier": "Legendary",
+      "basePoints": 20,
+      "playCost": 3,
+      "tags": ["Mushroom", "Luxury"],
+      "scoreMultiplierContribution": 1.5,
+      "bonusFlatPoints": 10
+    }
+  ]
+}

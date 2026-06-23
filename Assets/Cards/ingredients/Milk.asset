@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9aae5e4cbced448a495f424507353d, type: 3}
+  m_Name: Milk
+  m_EditorClassIdentifier: 
+  displayName: Milk
+  art: {fileID: 21300000, guid: 82df1fc63467a3842addd70d355d41cf, type: 3}
+  cardType: 0
+  basePoints: 3
+  playCost: 0
+  tier: 0
+  tags: 64
+  scoreMultiplierContribution: 1
+  bonusFlatPoints: 0

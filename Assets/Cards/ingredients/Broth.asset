@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b68e9957a6c6d49bbbf009364772b9, type: 3}
+  m_Name: Broth
+  m_EditorClassIdentifier: 
+  displayName: Broth
+  art: {fileID: 21300000, guid: e9452d3ba2ec7e44fbfb8e15a4f5fc11, type: 3}
+  cardType: 1
+  basePoints: 0
+  playCost: 0
+  tier: 1
+  slots:
+  - matchMode: 0
+    exactCard: {fileID: 11400000, guid: 9f42b80939c0b4f43871b002be3290dc, type: 2}
+    requiredTags: 64
+    requiredTier: 0
+  requiresSubRecipe: 0
+  scoringMultiplier: 1
+  unlocksRecipes:
+  - {fileID: 0}
