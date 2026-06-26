@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Globalization;
 using CardGame;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class HandController : MonoBehaviour  
