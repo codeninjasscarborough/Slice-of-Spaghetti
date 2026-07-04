@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class NewBehaviourScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ButtonGrowth : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private Vector3 startingSize;
     public float scaleAmount;

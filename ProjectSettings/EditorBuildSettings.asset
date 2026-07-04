@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mainmenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Quit.unity
+    guid: 555c23f25a324c443b1bbc5a8683a869
+  - enabled: 1
+    path: Assets/Scenes/Slice of Spaghetti.unity
+    guid: 1e0b5329753049b489322cae0bea264f
   m_configObjects: {}
