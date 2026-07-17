@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 165978001}
   - component: {fileID: 165978000}
   - component: {fileID: 165978003}
+  - component: {fileID: 165978004}
   m_Layer: 5
   m_Name: Deck
   m_TagString: Untagged
@@ -409,7 +410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115, y: -128}
+  m_AnchoredPosition: {x: 101, y: -117.27}
   m_SizeDelta: {x: 141.47, y: 183.3709}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &165978000
@@ -523,6 +524,19 @@ MonoBehaviour:
   numOfCardsInDeck: 64
   card: {fileID: 144740459}
   cardAnimator: {fileID: 144740461}
+--- !u!114 &165978004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165977997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f4b3b48215a40409c2148c354883b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCard: {fileID: 144740458}
 --- !u!1 &528870964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,8 +1551,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4283222357
+  m_fontColor: {r: 0.33275187, g: 0.78867924, b: 0.29612666, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1739,6 +1753,7 @@ GameObject:
   - component: {fileID: 2019036284}
   - component: {fileID: 2019036283}
   - component: {fileID: 2019036282}
+  - component: {fileID: 2019036285}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1791,6 +1806,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019036285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019036281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f4b3b48215a40409c2148c354883b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCard: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
