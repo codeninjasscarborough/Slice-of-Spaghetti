@@ -49,6 +49,7 @@ public class FunctionalCard : MonoBehaviour
     {
         card.sprite = DeckController.Instance.PendingOffer.Data.Art;
         cardAnimator?.SetTrigger("Card clicked");
+
     }
 
 }
