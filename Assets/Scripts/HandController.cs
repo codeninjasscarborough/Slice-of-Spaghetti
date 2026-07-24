@@ -25,7 +25,10 @@ public class HandController : MonoBehaviour
 
     // Start is called before the first frame update
 
-  
+    private void Start()
+    {
+        hand = new Hand(PlayerSide.Local);
+    }
 
     public void OnClick()
     {
