@@ -43,11 +43,12 @@ public class PickUpCard : MonoBehaviour
 
         rectyTransform.anchoredPosition = Vector2.zero;
 
+        DeckController.Instance.AcceptOfferedCard(hand.GetComponent<HandController>().hand);
     }
 
     void OnRandomCardAccepted(RandomCardAcceptedEvent e)
     {
-        DeckController.Instance.AcceptOfferedCard(hand.GetComponent<HandController>().hand);
+        // HI DIS IS BEEG TOMATE HEHE
     }
 }
 

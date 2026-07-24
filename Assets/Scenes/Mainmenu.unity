@@ -1823,9 +1823,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685379950}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &685379953
 MonoBehaviour:
@@ -2842,9 +2842,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264747534}
   m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!114 &1264747537
 MonoBehaviour:
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1121218445}
   m_HandleRect: {fileID: 1121218444}
   m_Direction: 2
-  m_Value: 0.9999999
+  m_Value: 1
   m_Size: 0.3289141
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3778,9 +3778,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programer: Someone \n\nDesigner: Someone\n\nArt Director: Someone\n\nArtist:
     Someone\n\nSound Director: Someone\n\nProject Manager: Someone\n\nUI/UX: Someone\n\nPlaytester:
-    Someone\n\nNeighborhood Distractor: Tyson Chen\n\nFont: Tokokoo Studio\n\nPrograms:
-    Unit, Krita (for the art)\n\nSensei: Aayush Shrestha, Jaismin, Anna\n\nCopyright\xA9
-    2005-2026 Unity Technologies. All right reserved."
+    Someone\n\nWatcher: Tyson Chen\n\nVery Annoying Guy: Brenden\n\nFont: Tokokoo
+    Studio\n\nPrograms: Unity, Krita (for the art)\n\nSensei: Aayush Shrestha, Jaismin,
+    Anna, Sarim, Sadik\n\nCreator: Someone\n\nCopyright\xA9 2005-2026 Unity Technologies.
+    All rights reserved."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
   m_sharedMaterial: {fileID: 1442290933110430423, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
