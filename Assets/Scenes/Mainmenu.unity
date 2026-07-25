@@ -1898,10 +1898,10 @@ RectTransform:
   - {fileID: 446382549}
   m_Father: {fileID: 1264747535}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0.49111682}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000009536743, y: 0}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: 0.0000009536743, y: -0.0000052452087}
+  m_SizeDelta: {x: 160, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807464431
 MonoBehaviour:
@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: title
+  m_text: Seasonings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
   m_sharedMaterial: {fileID: 1442290933110430423, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
@@ -3778,10 +3778,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programer: Someone \n\nDesigner: Someone\n\nArt Director: Someone\n\nArtist:
     Someone\n\nSound Director: Someone\n\nProject Manager: Someone\n\nUI/UX: Someone\n\nPlaytester:
-    Someone\n\nWatcher: Tyson Chen\n\nVery Annoying Guy: Brenden\n\nFont: Tokokoo
-    Studio\n\nPrograms: Unity, Krita (for the art)\n\nSensei: Aayush Shrestha, Jaismin,
-    Anna, Sarim, Sadik\n\nCreator: Someone\n\nCopyright\xA9 2005-2026 Unity Technologies.
-    All rights reserved."
+    Someone\n\nFont: Tokokoo Studio\n\nPrograms: Unity, Krita (for the art)\n\nSensei:
+    Aayush Shrestha, Jaismin, Anna, Sarim, Sadik\n\nCreator: Someone\n\nCopyright
+    \xA9 2005-2026 Unity Technologies. All rights reserved."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
   m_sharedMaterial: {fileID: 1442290933110430423, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}

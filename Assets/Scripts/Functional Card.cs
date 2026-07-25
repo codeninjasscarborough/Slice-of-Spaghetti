@@ -48,7 +48,7 @@ public class FunctionalCard : MonoBehaviour
     void OpenCard()
     {
         card.sprite = DeckController.Instance.PendingOffer.Data.Art;
-        cardAnimator?.SetTrigger("Card clicked");
+        cardAnimator?.SetBool("Card clicked", true);
 
     }
 

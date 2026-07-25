@@ -9,7 +9,7 @@ public class ButtonAnimation : MonoBehaviour
     public void PlayAnimation()
     {
         animator.SetTrigger("Play");
-        Debug.Log("Hi guys omg i love potatoes and like i am nine years old and stuff. Did you know that snakes are cute and I don't care if you say otherwise? Candy can be good but it isn't that good for you.");
+        Debug.Log("01011001 01101111 01110101 00100111 01110010 01100101 00100000 01100001 01110111 01100101 01110011 01101111 01101101 01100101 00100001 got it?");
     }
 
 }

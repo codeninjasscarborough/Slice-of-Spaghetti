@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using CardGame;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PickUpCard : MonoBehaviour
 {
-    public GameObject hand;
+    [SerializeField]
+    private HandController hand;
     private RectTransform rectyTransform;
+    private Vector2 startPos;
+
+    [SerializeField]    
+    private GameObject cardBase;
 
     // This is the Start function
     void Start()
     {
         rectyTransform = GetComponent<RectTransform>();
+        startPos = rectyTransform.position;
     }
 
     private void OnEnable()
@@ -30,25 +37,23 @@ public class PickUpCard : MonoBehaviour
     public void CardClick()
     {
 
-        Animator anims = GetComponent<Animator>();
-        if (anims != null)
-        {
-            anims.enabled = false;
-        }
+        GameObject cardy = Instantiate(cardBase);
+        cardy.GetComponent<RectTransform>().SetParent(hand.transform);
+        cardy.GetComponent<RectTransform>().anchoredPosition = new Vector2(0 + (hand.hand.Count * 50f), 120f);
+        cardy.GetComponent<Image>().sprite = DeckController.Instance.PendingOffer.Data.Art;
 
-        rectyTransform.anchorMin = new Vector2(0.5f, 0f);
-        rectyTransform.anchorMax = new Vector2(0.5f, 0f);
+        hand.OnClick();
 
-        rectyTransform.pivot = new Vector2(0.5f, 0f);
+        Animator anim = GetComponent<Animator>();
+        anim.SetBool("Card clicked", false);
 
-        rectyTransform.anchoredPosition = Vector2.zero;
-
-        DeckController.Instance.AcceptOfferedCard(hand.GetComponent<HandController>().hand);
+        rectyTransform.position = startPos;
     }
 
     void OnRandomCardAccepted(RandomCardAcceptedEvent e)
     {
-        // HI DIS IS BEEG TOMATE HEHE
+        // DA BEEG TOMTTE
+        // and ja s
     }
 }
 

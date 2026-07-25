@@ -5,35 +5,21 @@ using UnityEngine;
 public class HandController : MonoBehaviour  
 {
     public Hand hand;
-
-    //Vector2 targetPos = 5;
-
-    //StartCoroutine(AnimatedCardTo(targetPos));
-
-    //private IEnumerator AnimatedCardTo(targetPos)
-    //{
-    //    Vector2 startPos = card.position;
-
-    //    for (float i = 0; i < animationDuration = 5; i += Time.unscaledDeltaTime)
-    //    {
-
-    //        Card.position = Mathf.Lerp(startPos, targetPos, i / animationDuration);
-    //        yield return null; S
-    //    }
-    //    Card.position = targetPos;
-    //}
+    public float xOffset = -5f;
 
     // Start is called before the first frame update
-
-    private void Start()
+    private void Awake()
     {
+
         hand = new Hand(PlayerSide.Local);
+
+        Debug.Log("Da Beeg Tomato Is Rotten.");
     }
 
     public void OnClick()
     {
         DeckController.Instance.AcceptOfferedCard(hand);
-        Debug.Log("You accepted the card");
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(xOffset * hand.Count, 50f);
     }
     // Update is called once per frame
     
