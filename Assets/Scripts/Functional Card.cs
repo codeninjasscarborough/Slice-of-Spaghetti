@@ -42,7 +42,8 @@ public class FunctionalCard : MonoBehaviour
 
     private void OnDisable()
     {
-        DeckController.Instance.OnAskedForCard -= OpenCard;
+       // THAT LITERALLY HAS NO USE SO FAR -> 
+        //DeckController.Instance.OnAskedForCard -= OpenCard;
     }
 
     void OpenCard()

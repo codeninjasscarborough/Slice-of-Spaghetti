@@ -22,10 +22,10 @@ MonoBehaviour:
   - data: {fileID: 11400000, guid: b3e8927fdfbd460449503eea5c9c2d03, type: 2}
     copies: 6
   - data: {fileID: 11400000, guid: c2d23eabc1894dd4b84ed613dbbb972e, type: 2}
-    copies: 6
+    copies: 5
   - data: {fileID: 11400000, guid: 00c7859cbfcfdc64b996023b0d909a58, type: 2}
-    copies: 6
+    copies: 7
   - data: {fileID: 11400000, guid: 446bba0ef970adb438daa4157a987860, type: 2}
     copies: 6
   - data: {fileID: 11400000, guid: 9f42b80939c0b4f43871b002be3290dc, type: 2}
-    copies: 6
+    copies: 7

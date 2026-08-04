@@ -10,6 +10,8 @@ namespace CardGame
         [Serializable]
         public class RecipeCatalogEntry
         {
+            
+            public string recipeName;
             public RecipeCardData recipe;
             [TextArea] public string guideText;
             public Sprite icon;

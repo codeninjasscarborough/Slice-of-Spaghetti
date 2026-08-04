@@ -36,6 +36,7 @@ public class PickUpCard : MonoBehaviour
     // This is the CardClick function
     public void CardClick()
     {
+        if (!DeckController.Instance.HasPendingOffer) return;
 
         GameObject cardy = Instantiate(cardBase);
         cardy.GetComponent<RectTransform>().SetParent(hand.transform);
@@ -48,12 +49,12 @@ public class PickUpCard : MonoBehaviour
         anim.SetBool("Card clicked", false);
 
         rectyTransform.position = startPos;
+
     }
 
     void OnRandomCardAccepted(RandomCardAcceptedEvent e)
     {
-        // DA BEEG TOMTTE
-        // and ja s
+
     }
 }
 
