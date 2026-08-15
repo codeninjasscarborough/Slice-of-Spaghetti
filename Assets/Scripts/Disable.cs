@@ -6,14 +6,14 @@ using CardGame;
 
 public class Disable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public RectTransform recty;
+    private RectTransform recty;
 
-    public Canvas canvas;
+    private Canvas canvas;
 
     private Transform originalParent;
 
 
-    private void Awakke()
+    private void Awake()
     {
 
         recty = GetComponent<RectTransform>();
@@ -76,5 +76,6 @@ public class Disable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     } */
 
     // DO NOT TOUCH
+
 
 }
