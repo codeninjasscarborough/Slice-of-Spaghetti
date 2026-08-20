@@ -19,7 +19,7 @@ public class HandController : MonoBehaviour
     public void OnClick()
     {
         DeckController.Instance.AcceptOfferedCard(hand);
-        GetComponent<RectTransform>().anchoredPosition = new Vector2(xOffset * hand.Count, 50f);
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(xOffset * hand.Count, 300f);
     }
     // Update is called once per frame
     
