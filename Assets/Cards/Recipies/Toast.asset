@@ -19,9 +19,9 @@ MonoBehaviour:
   playCost: 0
   tier: 0
   slots:
-  - matchMode: 0
+  - matchMode: 1
     exactCard: {fileID: 0}
-    requiredTags: 0
+    requiredTags: 16
     requiredTier: 0
   requiresSubRecipe: 0
   scoringMultiplier: 1

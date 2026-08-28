@@ -9,20 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39b68e9957a6c6d49bbbf009364772b9, type: 3}
-  m_Name: Ramen
+  m_Script: {fileID: 11500000, guid: 9c9aae5e4cbced448a495f424507353d, type: 3}
+  m_Name: Oil
   m_EditorClassIdentifier: 
-  displayName: Ramen
+  displayName: 
   art: {fileID: 0}
-  cardType: 1
+  cardType: 0
   basePoints: 0
   playCost: 0
-  tier: 5
-  slots:
-  - matchMode: 1
-    exactCard: {fileID: 0}
-    requiredTags: 1
-    requiredTier: 0
-  requiresSubRecipe: 0
-  scoringMultiplier: 1
-  unlocksRecipes: []
+  tier: 0
+  tags: 0
+  scoreMultiplierContribution: 1
+  bonusFlatPoints: 0

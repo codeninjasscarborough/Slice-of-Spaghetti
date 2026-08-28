@@ -23,6 +23,14 @@ MonoBehaviour:
     exactCard: {fileID: 11400000, guid: 9f42b80939c0b4f43871b002be3290dc, type: 2}
     requiredTags: 64
     requiredTier: 0
+  - matchMode: 0
+    exactCard: {fileID: 11400000, guid: 9f42b80939c0b4f43871b002be3290dc, type: 2}
+    requiredTags: 64
+    requiredTier: 0
+  - matchMode: 0
+    exactCard: {fileID: 11400000, guid: 9f42b80939c0b4f43871b002be3290dc, type: 2}
+    requiredTags: 64
+    requiredTier: 0
   requiresSubRecipe: 0
   scoringMultiplier: 1
   unlocksRecipes:
