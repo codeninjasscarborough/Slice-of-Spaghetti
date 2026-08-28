@@ -15,9 +15,9 @@ MonoBehaviour:
   displayName: Lemon & Lime
   art: {fileID: 21300000, guid: c185ce03685487148b8d554649e00fe1, type: 3}
   cardType: 0
-  basePoints: 0
+  basePoints: 4
   playCost: 0
   tier: 1
-  tags: 256
+  tags: 288
   scoreMultiplierContribution: 1
   bonusFlatPoints: 0

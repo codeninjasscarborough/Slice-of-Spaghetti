@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c9aae5e4cbced448a495f424507353d, type: 3}
   m_Name: Oregano & Parsely
   m_EditorClassIdentifier: 
-  displayName: 
-  art: {fileID: 0}
+  displayName: Oregano & Parsely
+  art: {fileID: 21300000, guid: 2f446023d4ed03340896acc64076a438, type: 3}
   cardType: 0
-  basePoints: 0
+  basePoints: 4
   playCost: 0
-  tier: 0
-  tags: 0
+  tier: 1
+  tags: 33
   scoreMultiplierContribution: 1
   bonusFlatPoints: 0

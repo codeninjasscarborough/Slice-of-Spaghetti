@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Butter
   art: {fileID: 21300000, guid: 8c4d0a69f68505c43b0630aae2c5a075, type: 3}
   cardType: 0
-  basePoints: 0
+  basePoints: 2
   playCost: 0
   tier: 0
   tags: 8

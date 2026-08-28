@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Water
   art: {fileID: 21300000, guid: 5965194ca6e61e54aa3bd963fcb10c8b, type: 3}
   cardType: 0
-  basePoints: 0
+  basePoints: 2
   playCost: 0
   tier: 0
   tags: 64

@@ -15,9 +15,9 @@ MonoBehaviour:
   displayName: Tomato
   art: {fileID: 21300000, guid: 89ce9034c29c8b44e8bf409c432e543b, type: 3}
   cardType: 0
-  basePoints: 0
+  basePoints: 4
   playCost: 0
   tier: 1
-  tags: 1
+  tags: 257
   scoreMultiplierContribution: 1
   bonusFlatPoints: 0

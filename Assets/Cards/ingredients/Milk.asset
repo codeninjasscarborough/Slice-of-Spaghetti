@@ -15,9 +15,9 @@ MonoBehaviour:
   displayName: Milk
   art: {fileID: 21300000, guid: 82df1fc63467a3842addd70d355d41cf, type: 3}
   cardType: 0
-  basePoints: 3
+  basePoints: 2
   playCost: 0
   tier: 0
-  tags: 64
+  tags: 72
   scoreMultiplierContribution: 1
   bonusFlatPoints: 0
