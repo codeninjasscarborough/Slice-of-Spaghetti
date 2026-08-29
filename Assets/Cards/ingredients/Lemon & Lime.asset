@@ -17,6 +17,7 @@ MonoBehaviour:
   cardType: 0
   basePoints: 4
   playCost: 0
+  titleIndex: 1
   tier: 1
   tags: 288
   scoreMultiplierContribution: 1

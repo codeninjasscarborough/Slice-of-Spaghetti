@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using CardGame;
+using CardGame.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -41,7 +42,7 @@ public class PickUpCard : MonoBehaviour
         GameObject cardy = Instantiate(cardBase);
         cardy.GetComponent<RectTransform>().SetParent(hand.transform);
         cardy.GetComponent<RectTransform>().anchoredPosition = new Vector2(0 + (hand.hand.Count * 50f), 120f);
-        cardy.GetComponent<Image>().sprite = DeckController.Instance.PendingOffer.Data.Art;
+        cardy.GetComponent<CardView>().SetCard(DeckController.Instance.PendingOffer);
 
         hand.OnClick();
 

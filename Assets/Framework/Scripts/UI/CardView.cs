@@ -2,6 +2,7 @@
 using CardGame;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 namespace CardGame.UI
 {
@@ -10,7 +11,8 @@ namespace CardGame.UI
     public class CardView : MonoBehaviour
     {
         public Image arts;
-        public Card card;
+        public TMP_Text title;
+        public TMP_Text titleBottom;
 
         public Action<CardView> onClicked;
         public Card Card { get; private set; }
@@ -23,15 +25,22 @@ namespace CardGame.UI
             {
                 myButton.onClick.AddListener(Clicked);
             }
+
+            title = GetComponentInChildren<TMP_Text>();
+
+            if (title != null)
+            {
+                title.text = Card.Data.DisplayName;
+            }
         }
 
         public void Show(Card newCard)
         {
-            card = newCard;
+            Card = newCard;
 
-            if (arts != null && card != null)
+            if (arts != null && Card != null)
             {
-                arts.sprite = card.Data.Art;
+                arts.sprite = Card.Data.Art;
             }
         }
 
@@ -42,10 +51,30 @@ namespace CardGame.UI
 
         public void Clicked()
         {
-            if (card == null) return;
+            if (Card == null) return;
             if (onClicked != null) onClicked(this);
         }
 
+        public void SetCard(Card c)
+        {
+            Card = c;
+            arts.sprite = Card.Data.Art;
+
+            title.gameObject.SetActive(false);
+            titleBottom.gameObject.SetActive(false);
+
+            if (c.Data.TitleIndex == 0)
+            {
+            title.gameObject.SetActive(true);
+                title.text = Card.Data.DisplayName;
+            }
+            else
+            {
+                titleBottom.gameObject.SetActive(true);
+
+                titleBottom.text = Card.Data.DisplayName;
+            }
+        }
 
     }
 }
