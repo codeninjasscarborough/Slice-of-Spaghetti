@@ -19,10 +19,10 @@ public class HandView : MonoBehaviour
         GameEventBus.Subscribe<HandChangedEvent>(HandChanged);
     }
 
-   void OnDisable()
-   {
+    void OnDisable()
+    {
         GameEventBus.Unsubscribe<HandChangedEvent>(HandChanged);
-   }
+    }
 
     void HandChanged(HandChangedEvent e)
     {
@@ -39,6 +39,39 @@ public class HandView : MonoBehaviour
         {
             CardView newCard = Instantiate(cardPrefab, transform);
             newCard.Show(c);
-            //newCard.onClicked = 
+            newCard.onClicked = CardWasClicked;
+            myCards.Add(newCard);
+        }
+
+        LayOutCards();
+    }
+
+    void LayOutCards()
+    {
+        int howMany = myCards.Count;
+        if (howMany == 0) return;
+
+       float gap = Mathf.Min(spacing, biggestWidth/howMany);
+       float startX = -(howMany - 1) * gap / 2f;
+       
+        for (int i = 0; i < howMany; i++)
+        {
+            RectTransform box = myCards[i].GetComponent<RectTransform>();
+            float howFar = 0.5f;
+
+             if(howMany > 1) howFar = (float)i / (howMany - 1);
+
+            float x = startX + (i * gap);
+            float y = Mathf.Sin(howFar * Mathf.PI) * 25f;
+
+            box.anchoredPosition = new Vector2(x, y);
+            box.localRotation = Quaternion.Euler(0,0, Mathf.Lerp(tilt, -tilt, howFar));
+            box.SetSiblingIndex(i);
+        }
+    }
+
+    void CardWasClicked(CardView clicked)
+    {
+        Debug.Log("You clicked " + clicked.Card.Data.DisplayName);
     }
 }
