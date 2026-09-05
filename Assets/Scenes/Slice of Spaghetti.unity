@@ -830,8 +830,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1309600513}
   m_HandleRect: {fileID: 1309600512}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.99953234
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1033,7 +1033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -17.263, y: 167}
+  m_AnchoredPosition: {x: -76.4, y: 160.29}
   m_SizeDelta: {x: 1059.869, y: 320.58997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925390175
@@ -1067,7 +1067,7 @@ MonoBehaviour:
     m_Top: -55
     m_Bottom: 0
   m_ChildAlignment: 3
-  m_Spacing: -70
+  m_Spacing: -69
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1087,7 +1087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151be51e9b97be74585d5abaf26ba205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 2019036282}
+  cardPrefab: {fileID: 2589642507033457622, guid: 4ecf8e869bf40e243907f3f4a61336c9, type: 3}
+  pot: {fileID: 1641887626}
   spacing: 90
   biggestWidth: 1400
   tilt: 4
@@ -2317,6 +2318,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1641887625}
   - component: {fileID: 1641887626}
+  - component: {fileID: 1641887628}
+  - component: {fileID: 1641887627}
   m_Layer: 5
   m_Name: CookingPot
   m_TagString: Untagged
@@ -2361,6 +2364,44 @@ MonoBehaviour:
   cookStuff: {fileID: 0}
   potLabel: {fileID: 1832814779}
   gapsBetweenCards: 120
+--- !u!114 &1641887627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641887624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1641887628
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641887624}
+  m_CullTransparentMesh: 1
 --- !u!1 &1676851033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,7 +2903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000017860695, y: 0}
+  m_AnchoredPosition: {x: -0.00006231749, y: 0}
   m_SizeDelta: {x: -66.221, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1910142019
@@ -2991,7 +3032,7 @@ MonoBehaviour:
   recipeCatalog: {fileID: 11400000, guid: 84c2194023c968d4dbb884e99cf1abb0, type: 2}
   deckController: {fileID: 1854724233}
   boardLayoutZones: {fileID: 0}
-  cardsDrawnPerTurn: 3
+  cardsDrawnPerTurn: 0
   winScoreThreshold: 200
 --- !u!4 &2019036284
 Transform:
@@ -3108,7 +3149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a9bbd75c293b84e84043ecbc2a39c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 925390175}
+  hand: {fileID: 0}
   cardBase: {fileID: 528729850165261646, guid: 4ecf8e869bf40e243907f3f4a61336c9, type: 3}
 --- !u!224 &728621552111111991
 RectTransform:

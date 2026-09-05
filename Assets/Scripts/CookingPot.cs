@@ -77,6 +77,6 @@ public class CookingPot : MonoBehaviour
 
     void Cook()
     {
-
+        Debug.Log("be smth here soon idk");
     }
 }

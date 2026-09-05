@@ -7,6 +7,7 @@ using UnityEngine;
 public class HandView : MonoBehaviour
 {
     public CardView cardPrefab;
+    public CookingPot pot;
 
     public float spacing = 90f;
     public float biggestWidth = 1400f;
@@ -49,6 +50,7 @@ public class HandView : MonoBehaviour
     void LayOutCards()
     {
         int howMany = myCards.Count;
+        Debug.Log(howMany + (" can you debug.log how many?"));
         if (howMany == 0) return;
 
        float gap = Mathf.Min(spacing, biggestWidth/howMany);
@@ -72,6 +74,6 @@ public class HandView : MonoBehaviour
 
     void CardWasClicked(CardView clicked)
     {
-        Debug.Log("You clicked " + clicked.Card.Data.DisplayName);
+        if (pot != null) pot.PutInThePot(clicked);
     }
 }
