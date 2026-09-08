@@ -39,7 +39,7 @@ public class PickUpCard : MonoBehaviour
     {
         if (!DeckController.Instance.HasPendingOffer) return;
 
-        GameObject cardy = Instantiate(cardBase);
+        //GameObject cardy = Instantiate(cardBase);
           
 //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/|\\
 // problem no.1                                                                                                                                                 //1\\
@@ -49,7 +49,7 @@ public class PickUpCard : MonoBehaviour
 // |/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WA//5    \\                                                                                                                 //
 //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/|!                                     //6     \\
                                                                          //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\/|!                            //7      \\
-cardy.GetComponent<RectTransform>().SetParent(hand.transform);           //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\/|! (ENGINE)                   //8       || 
+//cardy.GetComponent<RectTransform>().SetParent(hand.transform);           //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\/|! (ENGINE)                   //8       || 
                                                                          //|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|\/|!                            //9      //
 //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/|!                                     //1     //
 // |/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WALL|\||/|DIAMOND & CARBON WA//2    //                                                                                                                      
@@ -59,8 +59,8 @@ cardy.GetComponent<RectTransform>().SetParent(hand.transform);           //|\|/|
 // problem no.1                                                                                                                                                 //6//
 //|\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/|\/||\|/|\|/|\|/|\|/||\|/|\|/|\|/|\|/|\/||\|//
 
-        cardy.GetComponent<RectTransform>().anchoredPosition = new Vector2(0 + (hand.hand.Count * 50f), 120f);
-        cardy.GetComponent<CardView>().SetCard(DeckController.Instance.PendingOffer); 
+        //cardy.GetComponent<RectTransform>().anchoredPosition = new Vector2(0 + (hand.hand.Count * 50f), 120f);
+        //cardy.GetComponent<CardView>().SetCard(DeckController.Instance.PendingOffer); 
 
         hand.OnClick();
 
