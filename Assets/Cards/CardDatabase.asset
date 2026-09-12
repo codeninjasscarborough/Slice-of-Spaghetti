@@ -33,3 +33,7 @@ MonoBehaviour:
     copies: 6
   - data: {fileID: 11400000, guid: bae74091ca176c145a31e3334cb2cc45, type: 2}
     copies: 7
+  - data: {fileID: 11400000, guid: e5aa0ca18d13d0c46b27ff5938fae115, type: 2}
+    copies: 7
+  - data: {fileID: 11400000, guid: 095ff7e0d600d484cb0561154678f921, type: 2}
+    copies: 7

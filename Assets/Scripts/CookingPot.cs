@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using CardGame;
 using TMPro;
 using CardGame.UI;
+using Unity.VisualScripting;
 
 
 public class CookingPot : MonoBehaviour
@@ -72,11 +73,70 @@ public class CookingPot : MonoBehaviour
 
     void LookForRecipe()
     {
+        PlayerState me  = GameManager.Instance.LocalPlayer;
 
+        if (theBoard != null)
+        {
+            me.CloseRecipeBoard(theBoard);
+            theBoard = null;
+        }
+
+        if(inThePot.Count == 0)
+        {
+            potLabel.text = ("Please put something in the pot!");
+            cookStuff.interactable = false;
+            return;
+        }
+
+        List<Card> potCards = new List<Card>();
+        foreach (CardView v in inThePot)
+        {
+            potCards.Add(v.Card);
+        }
+
+        foreach (RecipeCatalog.RecipeCatalogEntry entry in recipeBook.Entries)
+        {
+           if (entry.recipe == null) continue;
+           if (entry.visible == false) continue;
+
+           if (entry.recipe.Slots.Count != potCards.Count) continue;
+
+           RecipeBoard tryBoard = me.OpenRecipeBoard(entry.recipe);
+           List<Card>leftOver = RecipeValidator.AutoPlace(potCards, tryBoard);
+
+           if (leftOver.Count == 0 && tryBoard.IsComplete)
+           { 
+              theBoard = tryBoard;
+              potLabel.text = "Making: " + entry.recipe.DisplayName;
+              cookStuff.interactable = true;
+              return;
+           }
+
+            me.CloseRecipeBoard(tryBoard);
+        }
+
+        potLabel.text = inThePot.Count + "These are nice cards, but no recipe is made like this!";
+        cookStuff.interactable = false;
     }
 
     void Cook()
     {
-        Debug.Log("be smth here soon idk");
+        if (theBoard == null) return;
+        if (theBoard.IsComplete == false) return;
+
+        string mealName = theBoard.Recipe.DisplayName;
+
+        // Holy line of code
+        GameManager.Instance.RequestCompleteRecipe(theBoard, PlayerSide.Local);
+
+        foreach (CardView v in inThePot)
+        {
+            Destroy(v.gameObject);
+        }
+        inThePot.Clear();
+        theBoard = null;
+
+        potLabel.text = "You Cooked:" + mealName + "!";
+        cookStuff.interactable = false;
     }
 }

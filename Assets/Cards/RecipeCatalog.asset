@@ -33,3 +33,9 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: fcfb831574805104fa32cf18ea7a3c4b, type: 3}
     visible: 1
     startDiscovered: 0
+  - recipeName: Sophie
+    recipe: {fileID: 11400000, guid: 03271295d46df1d488b1a8eea6c1f13a, type: 2}
+    guideText: heheheheh
+    icon: {fileID: 21300000, guid: 690f1c1f8e73d1d4a9cf7689260b63b5, type: 3}
+    visible: 1
+    startDiscovered: 0
