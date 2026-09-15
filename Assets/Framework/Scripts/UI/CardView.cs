@@ -28,15 +28,12 @@ namespace CardGame.UI
 
             title = GetComponentInChildren<TMP_Text>();
 
-            if (title != null)
-            {
-                title.text = Card.Data.DisplayName;
-            }
         }
 
         public void Show(Card newCard)
         {
             Card = newCard;
+            SetCard(newCard);
 
             if (arts != null && Card != null)
             {
