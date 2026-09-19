@@ -1927,9 +1927,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685379950}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &685379953
 MonoBehaviour:
@@ -2253,9 +2253,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852773189}
   m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!114 &852773192
 MonoBehaviour:
@@ -4048,9 +4048,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programer: Someone \n\nDesigner: Someone\n\nArt Director: Someone\n\nArtist:
     Someone\n\nSound Director: Someone\n\nProject Manager: Someone\n\nUI/UX: Someone\n\nPlaytester:
-    Someone\n\nFont: Tokokoo Studio\n\nPrograms: Unity, Krita (for the art)\n\nSensei:
-    Aayush Shrestha, Jaismin, Anna, Sarim, Sadik\n\nCreator: Someone\n\nCopyright
-    \xA9 2005-2026 Unity Technologies. All rights reserved."
+    Someone\n\nFont: Tokokoo Studio, one more hereee\n\nPrograms: Unity, Krita (for
+    the art)\n\nSensei: Aayush Shrestha, Jaismin, Anna, Sarim, Sadik, Zayan, Alexander\n\nCreator:
+    Someone\n\nCopyright \xA9 2005-2026 Unity Technologies. All rights reserved."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
   m_sharedMaterial: {fileID: 1442290933110430423, guid: e6aae45f37d594f4585931d01f93ab8a, type: 2}
